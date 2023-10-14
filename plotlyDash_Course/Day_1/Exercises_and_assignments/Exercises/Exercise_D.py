@@ -7,11 +7,13 @@ import pandas as pd
 # To get more info on this data go to: https://github.com/plotly/datasets/blob/master/Dash-Course/makeup-shades/README-shades.md
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/Dash-Course/makeup-shades/shades.csv')
 
+# Labels that will be applied to the graph
 scatterplotLabels = {
    "V" : "Value / Brightness",
    "S" : "Saturation"
 }
 
+# Create a graph figure
 fig = px.scatter(df,
                  x = "V",
                  y = "S",

@@ -9,8 +9,10 @@ df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/Dash-
 # Create a list of dataset features to be used in dcc
 column_list = df.columns
 
+# Create a slider component
 feature_slider = dcc.Slider(0, len(column_list)-1, marks = {idx: feature for idx, feature in enumerate(column_list)}, value = 5)
 
+# Create a checklist component
 feature_checklist =   dcc.Checklist(column_list)
 
 # Create the app object
