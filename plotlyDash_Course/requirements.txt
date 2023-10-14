@@ -1,0 +1,46 @@
+# Interactive tools libraries
+ipywidgets
+
+# Graphing libraries
+plotly
+matplotlib
+seaborn
+
+# Analyzing missing values
+missingno
+
+# Basic mapping analytics
+folium==0.12.1
+
+# Project Jupyter related libraries
+jupyterlab
+jupyterlab-spellchecker
+
+# Dash and Dash Components
+dash
+dash-ag-grid
+dash_daq
+dash-bootstrap-components
+dash-mantine-components
+dash-iconify
+
+# Science related libraries
+scipy
+statsmodels
+pandas
+
+# Machine Learning
+scikit-learn
+
+# Web scraping related libraries
+html5lib
+lxml
+selenium
+beautifulsoup4
+
+# SQL libraries
+ibm-db
+SQLAlchemy
+
+# Python utilities
+wget
