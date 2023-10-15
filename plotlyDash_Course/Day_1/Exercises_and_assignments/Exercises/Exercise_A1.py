@@ -7,10 +7,10 @@ import pandas as pd
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/Dash-Course/makeup-shades/shades.csv')
 
 # Create a list
-dropDownList = df['brand'].unique().tolist()
+dropDown_list = df['brand'].unique().tolist()
 
 # Create a variable for the dropDown
-brandSelector = dcc.Dropdown(options = dropDownList, value = dropDownList[3])
+brandSelector = dcc.Dropdown(options = dropDown_list, value = dropDown_list[3])
 
 # Create the app object
 app = Dash(__name__)
