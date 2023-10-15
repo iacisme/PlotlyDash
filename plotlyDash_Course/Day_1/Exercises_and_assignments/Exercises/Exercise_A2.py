@@ -7,16 +7,16 @@ import pandas as pd
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/Dash-Course/makeup-shades/shades.csv')
 
 # Create a list
-dropDownList = df['brand'].unique().tolist()
+dropDown_list = df['brand'].unique().tolist()
 
 # Create a list to be used in radio buttons
-radioButtonsList = sorted(df['group'].unique())
+radioButtons_list = sorted(df['group'].unique())
 
 # Create a variable for the dropDown
-brandSelector = dcc.Dropdown(options = dropDownList, value = dropDownList[3])
+brandSelector = dcc.Dropdown(options = dropDown_list, value = dropDown_list[3])
 
 # Create a variable for the radio buttons
-radioButtons = dcc.RadioItems(options = radioButtonsList, value = radioButtonsList[0])
+radioButtons = dcc.RadioItems(options = radioButtons_list, value = radioButtons_list[0])
 
 # Create the app object
 app = Dash(__name__)
